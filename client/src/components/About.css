@@ -141,7 +141,7 @@ hr {
 
 .headerContent {
   position: relative;
-  padding: 50px 0;
+  padding-bottom: 50px;
   min-height: inherit;
 }
 
