@@ -74,6 +74,39 @@ class About extends Component {
             ></img>
           </div>
         </header>
+        <div className="aboutSection">
+          <div className="container">
+            <div className="aboutMe row">
+              <div className="aboutInfo">
+                <h2>About Me</h2>
+                <p>
+                  Maxfield Smith was born in Scottsdale, AZ where he has lived
+                  his whole life. He attended ASU in Tempe, AZ where he
+                  graduated with a B.S. in Computer Science. Maxfield plans on
+                  getting an entry level job within the tech industry.
+                </p>
+              </div>
+              <div className="myHead">
+                <p>Place headshot here</p>
+              </div>
+            </div>
+            <div className="education row">
+              <div className="educationInfo">
+                <h2>Education</h2>
+                <p>
+                  Maxfield Smith graduated from ASU in May 2020. He received a
+                  B.S. in Computer Science from Ira A. Fulton School of
+                  Engineering. Some of the courses he took were: Intro to
+                  Artificial Intelligence, Computational Biology, and Into to
+                  Robotics.
+                </p>
+              </div>
+              <div className="educationPic">
+                <p>Place ASU logo here</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
