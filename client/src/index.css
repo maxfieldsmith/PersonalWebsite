@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: museo-sans, Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f0eee5;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
