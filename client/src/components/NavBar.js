@@ -21,13 +21,10 @@ class NavBar extends Component {
             <nav>
               <ul>
                 <li>
-                  <Link to="/">About Me</Link>
-                </li>
-                <li>
-                  <Link to="/resume">Education</Link>
-                </li>
-                <li>
                   <Link to="/projects">Projects</Link>
+                </li>
+                <li>
+                  <Link to="/resume">Resume</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact Me</Link>

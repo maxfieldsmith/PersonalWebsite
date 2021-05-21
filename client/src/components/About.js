@@ -30,13 +30,10 @@ class About extends Component {
                   <nav>
                     <ul>
                       <li>
-                        <Link to="/">About Me</Link>
-                      </li>
-                      <li>
-                        <Link to="/resume">Education</Link>
-                      </li>
-                      <li>
                         <Link to="/projects">Projects</Link>
+                      </li>
+                      <li>
+                        <Link to="/resume">Resume</Link>
                       </li>
                       <li>
                         <Link to="/contact">Contact Me</Link>
@@ -79,7 +76,7 @@ class About extends Component {
             <div className="aboutMe row">
               <div className="aboutInfo">
                 <h2>About Me</h2>
-                <p>
+                <p className="darker">
                   Maxfield Smith was born in Scottsdale, AZ where he now lives
                   full time. He attended ASU in Tempe, AZ where he graduated
                   with a B.S. in Computer Science. Maxfield plans on getting an
@@ -93,7 +90,7 @@ class About extends Component {
             <div className="education row">
               <div className="educationInfo">
                 <h2>Education</h2>
-                <p>
+                <p className="darker">
                   Maxfield Smith graduated from ASU in May 2020. He received a
                   B.S. in Computer Science from Ira A. Fulton School of
                   Engineering. Some of the courses he took were: Intro to
@@ -113,26 +110,67 @@ class About extends Component {
               <div className="skillsTitle">
                 <h2 className="skillsTitle head2">
                   <small>MY SKILLS</small>
-                  Programming Languages I know
+                  Programming Languages
                 </h2>
               </div>
             </div>
             <div className="languages row">
               <div className="python quad">
+                <img
+                  src="python_128x128.png"
+                  width="128px"
+                  height="128px"
+                  alt="Python Logo"
+                ></img>
                 <h3>Python</h3>
                 <hr></hr>
+                <p>
+                  I use python for data processing and big projects. This is the
+                  language I choose if I am able to choose any language.
+                </p>
               </div>
               <div className="java quad">
+                <img
+                  src="java_128x128.png"
+                  width="128px"
+                  height="128px"
+                  alt="Java Logo"
+                ></img>
                 <h3>Java</h3>
                 <hr></hr>
+                <p>
+                  I am most comfortable with Java since it is the first language
+                  I learned. Taught me all I know about OOP architecture.
+                </p>
               </div>
               <div className="cplus quad">
+                <img
+                  src="c_128x128.png"
+                  width="128px"
+                  height="128px"
+                  alt="C Logo"
+                ></img>
                 <h3>C/C++</h3>
                 <hr></hr>
+                <p>
+                  Made me the programmer I am today. Was kernal Programming on
+                  Ubuntu with C. Have used C/C++ the most of all.
+                </p>
               </div>
               <div className="sql quad">
+                <img
+                  src="post_128x128.png"
+                  width="128px"
+                  height="128px"
+                  alt="PostgreSQL Logo"
+                ></img>
                 <h3>SQL</h3>
                 <hr></hr>
+                <p>
+                  I know PostgreSQL but have not gotten to use it yet in a
+                  professional setting. Understand the logic behind SQL though
+                  course work.
+                </p>
               </div>
             </div>
           </div>
