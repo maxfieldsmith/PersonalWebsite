@@ -80,10 +80,10 @@ class About extends Component {
               <div className="aboutInfo">
                 <h2>About Me</h2>
                 <p>
-                  Maxfield Smith was born in Scottsdale, AZ where he has lived
-                  his whole life. He attended ASU in Tempe, AZ where he
-                  graduated with a B.S. in Computer Science. Maxfield plans on
-                  getting an entry level job within the tech industry.
+                  Maxfield Smith was born in Scottsdale, AZ where he now lives
+                  full time. He attended ASU in Tempe, AZ where he graduated
+                  with a B.S. in Computer Science. Maxfield plans on getting an
+                  entry level job within the tech industry.
                 </p>
               </div>
               <div className="myHead">
@@ -103,6 +103,36 @@ class About extends Component {
               </div>
               <div className="educationPic">
                 <p>Place ASU logo here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="skillsSection">
+          <div className="container">
+            <div className="row">
+              <div className="skillsTitle">
+                <h2 className="skillsTitle head2">
+                  <small>MY SKILLS</small>
+                  Programming Languages I know
+                </h2>
+              </div>
+            </div>
+            <div className="languages row">
+              <div className="python quad">
+                <h3>Python</h3>
+                <hr></hr>
+              </div>
+              <div className="java quad">
+                <h3>Java</h3>
+                <hr></hr>
+              </div>
+              <div className="cplus quad">
+                <h3>C/C++</h3>
+                <hr></hr>
+              </div>
+              <div className="sql quad">
+                <h3>SQL</h3>
+                <hr></hr>
               </div>
             </div>
           </div>

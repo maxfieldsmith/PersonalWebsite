@@ -89,10 +89,6 @@ ul {
   padding-inline-start: 40px;
 }
 
-hr {
-  margin: 0;
-}
-
 .container {
   max-width: 1105px;
   padding-right: 15px;
@@ -231,4 +227,68 @@ hr {
   max-width: 50%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.skillsSection {
+  background-color: rgb(252, 216, 55);
+}
+
+.skillsTitle {
+  text-align: center !important;
+  padding-right: 0;
+  margin-bottom: 50px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-size: 3.8rem;
+  color: #6b4c0a;
+}
+
+.head2 {
+  margin-bottom: 0;
+}
+
+.python {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.java {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.cplus {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.sql {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "Playfair Display", Times, serif;
+  font-weight: 500;
+  color: #6c6c6c;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.quad {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
 }
