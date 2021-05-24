@@ -200,13 +200,14 @@ ul {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #a9bbc2;
+  min-height: 100vh;
 }
 
 .aboutInfo {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .darker {
@@ -216,22 +217,22 @@ ul {
 .myHead {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .educationInfo {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .educationPic {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 small {
@@ -322,4 +323,106 @@ h3 {
 
 .projectsTitle h2 {
   box-shadow: black;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 15px;
+  margin-top: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-align: center;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+
+.control {
+  width: 10%;
+  opacity: 0.5;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.aboutMe {
+  position: relative;
+  padding: 0 100px;
+  align-items: center;
+  text-align: center;
+}
+.education {
+  position: relative;
+  padding: 0 100px;
+  align-items: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }

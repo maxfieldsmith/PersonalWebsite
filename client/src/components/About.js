@@ -2,7 +2,35 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 
+let slideIndex = 1;
+
 class About extends Component {
+  componentDidMount() {
+    this.showSlides(slideIndex);
+  }
+
+  showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "flex";
+  }
+
+  plusSlides(n) {
+    this.showSlides((slideIndex += n));
+  }
+
+  currentSlide(n) {
+    this.showSlides((slideIndex = n));
+  }
+
   render() {
     return (
       <div className="aboutMeContainer">
@@ -73,33 +101,64 @@ class About extends Component {
         </header>
         <div className="aboutSection">
           <div className="container">
-            <div className="aboutMe row">
-              <div className="aboutInfo">
-                <h2>About Me</h2>
-                <p className="darker">
-                  Maxfield Smith was born in Scottsdale, AZ where he now lives
-                  full time. He attended ASU in Tempe, AZ where he graduated
-                  with a B.S. in Computer Science. Maxfield plans on getting an
-                  entry level job within the tech industry.
-                </p>
-              </div>
-              <div className="myHead">
-                <p>Place headshot here</p>
+            <div className="row">
+              <div className="skillsTitle">
+                <h2 className="skillsTitle head2">
+                  Find out more about me
+                  <small>Get to know me</small>
+                </h2>
               </div>
             </div>
-            <div className="education row">
-              <div className="educationInfo">
-                <h2>Education</h2>
-                <p className="darker">
-                  Maxfield Smith graduated from ASU in May 2020. He received a
-                  B.S. in Computer Science from Ira A. Fulton School of
-                  Engineering. Some of the courses he took were: Intro to
-                  Artificial Intelligence, Computational Biology, and Into to
-                  Robotics.
-                </p>
-              </div>
-              <div className="educationPic">
-                <p>Place ASU logo here</p>
+          </div>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col">
+                <div className="slideshow-container">
+                  <div className="mySlides aboutMe row fade">
+                    <div className="aboutInfo">
+                      <h2 className="skillsTitle">About Me</h2>
+                      <p className="darker">
+                        Maxfield Smith was born in Scottsdale, AZ where he now
+                        lives full time. He attended ASU in Tempe, AZ where he
+                        graduated with a B.S. in Computer Science. Maxfield
+                        plans on getting an entry level job within the tech
+                        industry.
+                      </p>
+                    </div>
+                    <div className="myHead">
+                      <p>Place headshot here</p>
+                    </div>
+                  </div>
+                  <div className="mySlides education row fade">
+                    <div className="educationInfo">
+                      <h2 className="skillsTitle">Education</h2>
+                      <p className="darker">
+                        Maxfield Smith graduated from ASU in May 2020. He
+                        received a B.S. in Computer Science from Ira A. Fulton
+                        School of Engineering. Some of the courses he took were:
+                        Intro to Artificial Intelligence, Computational Biology,
+                        and Into to Robotics.
+                      </p>
+                    </div>
+                    <div className="educationPic">
+                      <p>Place ASU logo here</p>
+                    </div>
+                  </div>
+                  <a
+                    className="prev control"
+                    href="#/"
+                    onClick={() => this.plusSlides(-1)}
+                  >
+                    &#10094;
+                  </a>
+                  <a
+                    className="next control"
+                    href="#/"
+                    onClick={() => this.plusSlides(1)}
+                  >
+                    &#10095;
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -168,8 +227,8 @@ class About extends Component {
                 <hr></hr>
                 <p>
                   I know PostgreSQL but have not gotten to use it yet in a
-                  professional setting. Understand the logic behind SQL though
-                  course work.
+                  professional setting. I understand the logic behind SQL
+                  through course work.
                 </p>
               </div>
             </div>
