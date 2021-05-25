@@ -136,6 +136,11 @@ ul {
   z-index: 2;
 }
 
+.regularHeader {
+  min-height: 350px;
+  z-index: 2;
+}
+
 .headerContent {
   position: relative;
   padding-bottom: 50px;
@@ -164,6 +169,12 @@ ul {
   height: 100%;
   width: 100%;
   display: block !important;
+}
+
+#aboutIndex {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .img {
@@ -197,10 +208,10 @@ ul {
 }
 
 .aboutSection {
-  padding-top: 80px;
+  padding-top: 0;
   padding-bottom: 80px;
-  background-color: #a9bbc2;
   min-height: 100vh;
+  background: #99aabf;
 }
 
 .aboutInfo {
@@ -211,7 +222,8 @@ ul {
 }
 
 .darker {
-  color: #131719;
+  color: #f7f7f7;
+  padding: 0 50px;
 }
 
 .myHead {
@@ -219,6 +231,16 @@ ul {
   max-width: 50%;
   padding-right: 50px;
   padding-left: 50px;
+}
+
+.myHead img {
+  max-width: 350px;
+  max-height: 500px;
+}
+
+.mySlides {
+  background: rgba(1, 1, 1, 0.75);
+  height: 650px;
 }
 
 .educationInfo {
@@ -305,24 +327,92 @@ h3 {
 }
 
 .projectsHeader {
-  background-color: #99aabf;
+  background: #46494f;
   padding-top: 66.5px;
   min-height: 100vh;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+.headerContainer {
+  flex: 0 0 100%;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  max-width: 100%;
+  background: linear-gradient(
+    30deg,
+    #131719,
+    #46494f,
+    #9da5ab,
+    #a9bbc2,
+    #e1f2f5
+  );
+  padding: 3px;
+  border-radius: 1em;
+}
+
 .projectsTitle {
-  text-align: center !important;
-  padding-right: 0;
-  margin-bottom: 50px;
+  background: #1d1f20;
+  color: #f5f5f5;
+  padding: 2rem;
+  font-family: "Raleway";
   flex: 0 0 100%;
   max-width: 100%;
-  font-size: 3.8rem;
-  color: #292929;
+  text-align: center;
+  font-size: 72px;
+  border-radius: inherit;
+}
+
+.rowHeader {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  text-align: center;
+  border: 3px solid #e1f2f5;
+  border-radius: 1em;
+  background: #46494f;
+}
+
+.rowHeader > * {
+  width: 100%;
+}
+
+big {
+  font-size: 48px;
+  font-family: "Raleway";
   font-weight: 500;
 }
 
-.projectsTitle h2 {
-  box-shadow: black;
+.colInfo {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.vl {
+  border-left: 3px solid #e1f2f5;
+  height: 250px;
+  width: auto;
+  margin: 20px 0;
+}
+
+.schoolProjects {
+  margin-top: 20px;
+  background: #99aabf;
+  border-radius: 1em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.capstone {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.tss {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .container-fluid {
@@ -345,7 +435,7 @@ h3 {
   width: auto;
   padding: 15px;
   margin-top: 0px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 48px;
   transition: 0.6s ease;
@@ -368,7 +458,7 @@ h3 {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .active {
@@ -436,13 +526,13 @@ a {
 .download {
   color: #99aabf;
   text-align: center;
-  cursor: pointer;
 }
 
 .download h1 {
   text-align: center;
   padding-right: 0;
   color: #f7f7f7;
+  margin-bottom: 0;
 }
 
 .download a {
@@ -454,4 +544,37 @@ a {
 
 .download a:hover {
   cursor: pointer;
+}
+
+.resume {
+  padding: 30px;
+  text-align: center;
+}
+
+.contactHeader {
+  min-height: 100vh;
+  padding-top: 66.5px;
+  background-color: #f0eee5;
+}
+
+.contactH2 {
+  text-align: center;
+  padding-right: 0;
+}
+
+.contactBox {
+  background-color: #29292988;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.contactMe {
+  width: 50%;
+  background-color: #f7f7f7a2;
+  text-align: center;
+  padding: 50px;
+  margin-left: 25%;
+  height: inherit;
 }

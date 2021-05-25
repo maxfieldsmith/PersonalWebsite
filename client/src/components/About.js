@@ -99,7 +99,11 @@ class About extends Component {
             ></img>
           </div>
         </header>
-        <div className="aboutSection">
+        <div
+          className="aboutSection"
+          id="aboutIndex"
+          style={{ background: 'url("IMG_1227.JPG")' }}
+        >
           <div className="container">
             <div className="row">
               <div className="skillsTitle">
@@ -116,7 +120,9 @@ class About extends Component {
                 <div className="slideshow-container">
                   <div className="mySlides aboutMe row fade">
                     <div className="aboutInfo">
-                      <h2 className="skillsTitle">About Me</h2>
+                      <h2 className="skillsTitle" style={{ color: "#f7f7f7" }}>
+                        About Me
+                      </h2>
                       <p className="darker">
                         Maxfield Smith was born in Scottsdale, AZ where he now
                         lives full time. He attended ASU in Tempe, AZ where he
@@ -126,12 +132,18 @@ class About extends Component {
                       </p>
                     </div>
                     <div className="myHead">
-                      <p>Place headshot here</p>
+                      <img
+                        className="head"
+                        src="IMG_1528.JPG"
+                        alt="My Face"
+                      ></img>
                     </div>
                   </div>
                   <div className="mySlides education row fade">
                     <div className="educationInfo">
-                      <h2 className="skillsTitle">Education</h2>
+                      <h2 className="skillsTitle" style={{ color: "#f7f7f7" }}>
+                        Education
+                      </h2>
                       <p className="darker">
                         Maxfield Smith graduated from ASU in May 2020. He
                         received a B.S. in Computer Science from Ira A. Fulton

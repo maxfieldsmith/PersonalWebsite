@@ -15,7 +15,12 @@ class Resume extends Component {
           <div className="container">
             <div className="download">
               <h1>
-                <em>Download my Resume here</em>
+                <small
+                  style={{ fontWeight: "bold", textTransform: "uppercase" }}
+                >
+                  resume
+                </small>
+                Feel Free to Download and Save
               </h1>
               <a href="/Resume.pdf" download="resume">
                 Link here
@@ -26,8 +31,8 @@ class Resume extends Component {
             <iframe
               id="myIframe"
               title="My Resume"
-              src="Resume.pdf#toolbar=0"
-              width="100%"
+              src="Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
+              width="80%"
               height="1100px"
             ></iframe>
           </div>

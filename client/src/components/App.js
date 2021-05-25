@@ -5,6 +5,7 @@ import About from "./About";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 import Resume from "./Resume";
+import Contact from "./Contact";
 
 export default function App() {
   return (
@@ -21,20 +22,12 @@ export default function App() {
             <Route path="/projects" component={Projects}>
               <Projects />
             </Route>
-            <Route path="/contact">
+            <Route path="/contact" component={Contact}>
               <Contact />
             </Route>
           </Switch>
         </div>
       </Router>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <h2>Contact Me</h2>
     </div>
   );
 }
