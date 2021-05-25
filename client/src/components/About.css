@@ -426,3 +426,32 @@ h3 {
 a {
   text-decoration: none;
 }
+
+.resumeHeader {
+  min-height: 100vh;
+  padding-top: 66.5px;
+  background-color: #46494f;
+}
+
+.download {
+  color: #99aabf;
+  text-align: center;
+  cursor: pointer;
+}
+
+.download h1 {
+  text-align: center;
+  padding-right: 0;
+  color: #f7f7f7;
+}
+
+.download a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+.download a:hover {
+  cursor: pointer;
+}
