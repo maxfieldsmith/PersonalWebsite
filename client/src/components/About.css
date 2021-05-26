@@ -208,10 +208,9 @@ ul {
 }
 
 .aboutSection {
-  padding-top: 0;
   padding-bottom: 80px;
   min-height: 100vh;
-  background: #99aabf;
+  background: #9da5ab;
 }
 
 .aboutInfo {
@@ -255,6 +254,11 @@ ul {
   max-width: 50%;
   padding-right: 50px;
   padding-left: 50px;
+}
+
+.educationPic img {
+  max-width: 500px;
+  max-height: 500px;
 }
 
 small {
@@ -330,6 +334,7 @@ h3 {
   background: #46494f;
   padding-top: 66.5px;
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:200");
@@ -397,7 +402,8 @@ big {
   margin: 20px 0;
 }
 
-.schoolProjects {
+.schoolProjects,
+.passionProjects {
   margin-top: 20px;
   background: #99aabf;
   border-radius: 1em;
@@ -408,11 +414,36 @@ big {
 .capstone {
   flex: 0 0 50%;
   max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .tss {
   flex: 0 0 50%;
   max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.search {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sort {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.udp {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-fluid {
@@ -520,7 +551,8 @@ a {
 .resumeHeader {
   min-height: 100vh;
   padding-top: 66.5px;
-  background-color: #46494f;
+  background-color: #f0eee5;
+  font-family: "Raleway";
 }
 
 .download {
@@ -531,14 +563,16 @@ a {
 .download h1 {
   text-align: center;
   padding-right: 0;
-  color: #f7f7f7;
+  color: #131719;
   margin-bottom: 0;
+  font-family: "Raleway";
+  font-weight: 600;
 }
 
 .download a {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
-  color: #f7f7f7;
+  color: #131719;
   cursor: pointer;
 }
 
@@ -577,4 +611,12 @@ a {
   padding: 50px;
   margin-left: 25%;
   height: inherit;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  background-color: #a9bbc2;
+  padding: 16px;
+  border-radius: 1em;
+  height: 100%;
 }

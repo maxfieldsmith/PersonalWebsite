@@ -14,17 +14,18 @@ class Contact extends Component {
           <div className="fluid-container">
             <div className="contactBox">
               <div className="contactMe">
-                <h3>Maxfield Smith</h3>
-                <hr></hr>
-                <p>
-                  (480)993-7914
-                  <br />
-                  maxfielddsmith@gmail.com
-                  <br />
-                  <a href="http://github.com/maxfieldsmith">
-                    github.com/maxfieldsmith
-                  </a>
-                </p>
+                <div className="card">
+                  <h3>Maxfield Smith</h3>
+                  <p>
+                    (480)993-7914
+                    <br />
+                    maxfielddsmith@gmail.com
+                    <br />
+                    <a href="http://github.com/maxfieldsmith">
+                      github.com/maxfieldsmith
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

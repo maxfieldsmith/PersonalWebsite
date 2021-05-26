@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/resume" component={Resume}>
               <Resume />
             </Route>
-            <Route path="/projects" component={Projects}>
+            <Route exact path="/projects" component={Projects}>
               <Projects />
             </Route>
             <Route path="/contact" component={Contact}>

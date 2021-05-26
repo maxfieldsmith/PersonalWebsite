@@ -20,7 +20,7 @@ class Projects extends Component {
                     <img
                       width="172px"
                       height="72px"
-                      src="maxlogo.png"
+                      src="./images/maxlogo.png"
                       alt="My Logo logo"
                     />
                   </Link>
@@ -56,12 +56,18 @@ class Projects extends Component {
                     <big style={{ marginBottom: "15px" }}>Github</big>
                     <br />
                     <br />
-                    <img
-                      width="72px"
-                      height="72px"
-                      src="github_64x64.png"
-                      alt="Github logo"
-                    />
+                    <a
+                      href="https://github.com/maxfieldsmith"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        width="72px"
+                        height="72px"
+                        src="./images/github_64x64.png"
+                        alt="Github logo"
+                      />
+                    </a>
                     <br />
 
                     <a
@@ -90,43 +96,105 @@ class Projects extends Component {
 
             <div className="schoolProjects row">
               <div className="capstone quad">
-                <img
-                  src="java_128x128.png"
-                  width="128px"
-                  height="128px"
-                  alt="Java Logo"
-                ></img>
-                <h3>Capstone Project</h3>
-                <hr />
-                <p>
-                  For my capstone project we were tasked with creating a game
-                  for middle school students to teach them about the impacts of
-                  climate change. We teamed up with Mary Lou Fulton Teacher's
-                  College as a sponsor for this project. We had to incorporate
-                  VR/AR into the game. My main task was building the backend for
-                  the application.
-                </p>
+                <div className="card">
+                  <img
+                    src="./images/java_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>Capstone Project</h3>
+                  <hr />
+                  <p>
+                    For my capstone project we were tasked with creating a game
+                    for middle school students to teach them about the impacts
+                    of climate change. We teamed up with Mary Lou Fulton
+                    Teacher's College as a sponsor for this project. We had to
+                    incorporate VR/AR into the game. My main task was building
+                    the backend for the application.
+                  </p>
+                </div>
               </div>
               <div className="tss quad">
-                <img
-                  src="java_128x128.png"
-                  width="128px"
-                  height="128px"
-                  alt="Java Logo"
-                ></img>
-                <h3>TSS Profiling</h3>
-                <hr />
-                <p>
-                  This was a Computational Biology project that consisted of
-                  three undergrad students and one grad student. Inside of mRNA
-                  there exists transcription start sites (TSS) that span over a
-                  region of nuecliotides. Our job was to find, if any, regions
-                  were alternative promoters. This means that there is a
-                  promoter such that it is also a promoter in other mRNA
-                  strands. We then used statistical tests to figure out if there
-                  is any evidence that the alternative promoter is an
-                  alternative promoter.
-                </p>
+                <div className="card">
+                  <img
+                    src="./images/java_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>TSS Profiling</h3>
+                  <hr />
+                  <p>
+                    This was a Computational Biology project that consisted of
+                    three undergrad students and one grad student. Inside of
+                    mRNA there exists transcription start sites (TSS) that span
+                    over a region of nuecliotides. Our job was to find, if any,
+                    regions were alternative promoters. This means that there is
+                    a promoter such that it is also a promoter in other mRNA
+                    strands. We then used statistical tests to figure out if
+                    there is any evidence that the alternative promoter is an
+                    alternative promoter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container" style={{ marginTop: "50px" }}>
+            <div className="row">
+              <div className="headerContainer">
+                <div className="projectsTitle">Passion Projects</div>
+              </div>
+            </div>
+            <div className="passionProjects row">
+              <div className="search quad">
+                <div className="card">
+                  <img
+                    src="./images/java_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>Path Finding</h3>
+                  <hr />
+                  <p>
+                    I made a path finding visualizer using python. I was always
+                    curious how they looked so I built one.
+                  </p>
+                </div>
+              </div>
+              <div className="sort quad">
+                <div className="card">
+                  <img
+                    src="./images/java_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>Sorting Algorithms</h3>
+                  <hr />
+                  <p>
+                    I created a website that displays various sorting
+                    algorithms. This was my first website I ever made with
+                    React.
+                  </p>
+                </div>
+              </div>
+              <div className="udp quad">
+                <div className="card">
+                  <img
+                    src="./images/java_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>UDP/TCP</h3>
+                  <hr />
+                  <p>
+                    I created a UDP/TCP server and client end application in
+                    Linux
+                  </p>
+                </div>
               </div>
             </div>
           </div>

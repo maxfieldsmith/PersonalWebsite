@@ -38,7 +38,7 @@ class About extends Component {
           <div className="backgroundPic">
             <div
               className="img h-100 w-100"
-              style={{ background: 'url("backgroundHeader.png")' }}
+              style={{ background: 'url("./images/backgroundHeader.png")' }}
             ></div>
           </div>
           <div className="headerContent">
@@ -49,7 +49,7 @@ class About extends Component {
                     <img
                       width="172px"
                       height="72px"
-                      src="maxlogo.png"
+                      src="./images/maxlogo.png"
                       alt="My Logo logo"
                     />
                   </Link>
@@ -92,18 +92,14 @@ class About extends Component {
           </div>
           <div className="arrowDown">
             <img
-              src="downarrow.png"
+              src="./images/downarrow.png"
               alt="Down Arrow"
               height="50px"
               width="50px"
             ></img>
           </div>
         </header>
-        <div
-          className="aboutSection"
-          id="aboutIndex"
-          style={{ background: 'url("IMG_1227.JPG")' }}
-        >
+        <div className="aboutSection">
           <div className="container">
             <div className="row">
               <div className="skillsTitle">
@@ -114,7 +110,11 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <div className="container-fluid">
+          <div
+            className="container-fluid"
+            id="aboutIndex"
+            style={{ background: 'url("./images/IMG_1227.JPG")' }}
+          >
             <div className="row">
               <div className="col">
                 <div className="slideshow-container">
@@ -134,7 +134,7 @@ class About extends Component {
                     <div className="myHead">
                       <img
                         className="head"
-                        src="IMG_1528.JPG"
+                        src="./images/IMG_1528.JPG"
                         alt="My Face"
                       ></img>
                     </div>
@@ -153,7 +153,11 @@ class About extends Component {
                       </p>
                     </div>
                     <div className="educationPic">
-                      <p>Place ASU logo here</p>
+                      <img
+                        className="asu"
+                        src="./images/asu_logo_1.png"
+                        alt="ASU logo"
+                      ></img>
                     </div>
                   </div>
                   <a
@@ -188,7 +192,7 @@ class About extends Component {
             <div className="languages row">
               <div className="python quad">
                 <img
-                  src="python_128x128.png"
+                  src="./images/python_128x128.png"
                   width="128px"
                   height="128px"
                   alt="Python Logo"
@@ -202,7 +206,7 @@ class About extends Component {
               </div>
               <div className="java quad">
                 <img
-                  src="java_128x128.png"
+                  src="./images/java_128x128.png"
                   width="128px"
                   height="128px"
                   alt="Java Logo"
@@ -216,7 +220,7 @@ class About extends Component {
               </div>
               <div className="cplus quad">
                 <img
-                  src="c_128x128.png"
+                  src="./images/c_128x128.png"
                   width="128px"
                   height="128px"
                   alt="C Logo"
@@ -230,7 +234,7 @@ class About extends Component {
               </div>
               <div className="sql quad">
                 <img
-                  src="post_128x128.png"
+                  src="./images/post_128x128.png"
                   width="128px"
                   height="128px"
                   alt="PostgreSQL Logo"

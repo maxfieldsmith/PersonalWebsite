@@ -20,9 +20,9 @@ class Resume extends Component {
                 >
                   resume
                 </small>
-                Feel Free to Download and Save
+                Download and Save
               </h1>
-              <a href="/Resume.pdf" download="resume">
+              <a href="./documents/Resume.pdf" download="resume">
                 Link here
               </a>
             </div>
@@ -31,7 +31,7 @@ class Resume extends Component {
             <iframe
               id="myIframe"
               title="My Resume"
-              src="Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
+              src="./documents/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=fit"
               width="80%"
               height="1100px"
             ></iframe>
