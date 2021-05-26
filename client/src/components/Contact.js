@@ -14,7 +14,10 @@ class Contact extends Component {
           <div className="fluid-container">
             <div className="contactBox">
               <div className="contactMe">
-                <div className="card">
+                <div
+                  className="card"
+                  style={{ background: "#f5f5f5", borderRadius: "0" }}
+                >
                   <h3>Maxfield Smith</h3>
                   <p>
                     (480)993-7914
