@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
@@ -13,18 +14,12 @@ export default function App() {
       <Router>
         <div>
           <NavBar />
-
+          <ScrollToTop />
           <Switch>
             <Route exact path="/" component={About} />
-            <Route path="/resume" component={Resume}>
-              <Resume />
-            </Route>
-            <Route exact path="/projects" component={Projects}>
-              <Projects />
-            </Route>
-            <Route path="/contact" component={Contact}>
-              <Contact />
-            </Route>
+            <Route exact path="/resume" component={Resume}></Route>
+            <Route exact path="/projects" component={Projects}></Route>
+            <Route exact path="/contact" component={Contact}></Route>
           </Switch>
         </div>
       </Router>
