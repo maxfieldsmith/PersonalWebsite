@@ -98,7 +98,7 @@ class Projects extends Component {
               <div className="capstone quad">
                 <div className="card">
                   <img
-                    src="./images/java_128x128.png"
+                    src="./images/csharp_128x128.png"
                     width="128px"
                     height="128px"
                     alt="Java Logo"
@@ -118,7 +118,7 @@ class Projects extends Component {
               <div className="tss quad">
                 <div className="card">
                   <img
-                    src="./images/java_128x128.png"
+                    src="./images/python_128x128.png"
                     width="128px"
                     height="128px"
                     alt="Java Logo"
@@ -150,7 +150,7 @@ class Projects extends Component {
               <div className="search quad">
                 <div className="card">
                   <img
-                    src="./images/java_128x128.png"
+                    src="./images/python_128x128.png"
                     width="128px"
                     height="128px"
                     alt="Java Logo"
@@ -166,7 +166,7 @@ class Projects extends Component {
               <div className="sort quad">
                 <div className="card">
                   <img
-                    src="./images/java_128x128.png"
+                    src="./images/javascript_128x128.png"
                     width="128px"
                     height="128px"
                     alt="Java Logo"
@@ -183,16 +183,69 @@ class Projects extends Component {
               <div className="udp quad">
                 <div className="card">
                   <img
-                    src="./images/java_128x128.png"
+                    src="./images/c_128x128.png"
                     width="128px"
                     height="128px"
-                    alt="Java Logo"
+                    alt="C/C++ Logo"
                   ></img>
                   <h3>UDP/TCP</h3>
                   <hr />
                   <p>
                     I created a UDP/TCP server and client end application in
                     Linux
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="passionProjects row">
+              <div className="search quad">
+                <div className="card">
+                  <img
+                    src="./images/javascript_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>Better Spotify</h3>
+                  <hr />
+                  <p>
+                    This is a Spotify Application using the Spotify Api. Was
+                    created with React/Node.js/Express/JS. It requires a premium
+                    spotify account.
+                  </p>
+                </div>
+              </div>
+              <div className="sort quad">
+                <div className="card">
+                  <img
+                    src="./images/javascript_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="Java Logo"
+                  ></img>
+                  <h3>Basic Todo App</h3>
+                  <hr />
+                  <p>
+                    I wanted more experience with React and CSS so I made this
+                    simple todo application. Was created with React/JS/CSS/HTML
+                  </p>
+                </div>
+              </div>
+              <div className="udp quad">
+                <div className="card">
+                  <img
+                    src="./images/javascript_128x128.png"
+                    width="128px"
+                    height="128px"
+                    alt="C/C++ Logo"
+                  ></img>
+                  <h3>MongoDB App</h3>
+                  <hr />
+                  <p>
+                    In progress. This application uses Google oauth and MERN
+                    stack. It is a very involved project for someone who is just
+                    beginning at full stack development but we all have to start
+                    somewhere.
                   </p>
                 </div>
               </div>
